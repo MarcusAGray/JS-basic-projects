@@ -1,0 +1,89 @@
+body {
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 0 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    padding: 0 20px;
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2em;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 5px 10px;
+}
+
+.navBtn {
+    border: none;
+    background-color: white;
+    font-size: inherit;
+}
+
+.navBtn:hover {
+    color: rgb(36, 152, 230);
+}
+
+#color-flipper-text {
+    color: rgb(36, 152, 230);
+}
+
+main {
+    padding-top: 200px;
+}
+
+.color-flipper {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.color-box {
+    padding: 1em;
+    font-size: 2rem;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#flipper-btn {
+    margin: 15px;
+    padding: 15px 20px;
+    border: 2px solid rgb(37, 36, 36);
+    border-radius: 7px;
+    font-weight: 900;
+    transition: background-color 1s, color 1s;
+}
+
+#flipper-btn:hover {
+    background-color: rgb(37, 36, 36);
+    color: white; 
+}
+
