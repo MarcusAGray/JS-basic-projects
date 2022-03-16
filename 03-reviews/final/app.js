@@ -69,6 +69,7 @@ function showPerson(person) {
 }
 // show next person
 nextBtn.addEventListener("click", function () {
+  console.log("TEST");
   currentItem++;
   if (currentItem > reviews.length - 1) {
     currentItem = 0;

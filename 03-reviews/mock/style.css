@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --lightBlue: rgb(190, 233, 233);
+  --darkBlue: rgb(157, 204, 204);
+}
+
+body {
+  background-color: var(--lightBlue);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  padding: auto;
+  text-align: center;
+  color: rgb(94, 107, 145);
+  margin-top: 20px;
+}
+
+#underline {
+  width: 100px;
+  height: 5px;
+  background-color: rgb(55, 161, 223);
+  margin: 15px auto;
+}
+
+#reviewPlaceHolder {
+  background-color: var(--darkBlue);
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  height: 400px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0px 9px 8px -1px rgba(0,0,0,0.2);
+}
+
+#reviewPlaceHolder * {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+
+img {
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#profileInfo {
+  margin: 0 20px;
+  display: block;
+}
+
+#profileInfo p {
+  margin: 5px;
+  text-align: center;
+}
+
+#role {
+  text-transform: uppercase;
+}
+
+#reviewNavBtns {
+  display: block;
+  margin: 10px auto;
+}
+
+#reviewNavBtns * {
+  background-color: transparent;
+  border: none;
+}
+
+#arrowBtnsContainer * {
+  color: rgb(72, 62, 212);
+  font-size: 1.5rem;
+}
+
+#surpriseBtn {
+  display: block;
+  margin: 10px auto;
+  padding: 3px 10px;
+  border: 2px blue solid;
+  border-radius: 5%;
+  border-top-color: darkblue;
+  border-right-color: darkblue;
+  border-bottom-color: rgb(120, 42, 128);
+  border-left-color: rgb(156, 46, 132);
+  background-color: white;
+}
+
+#reviewNavBtns :hover {
+  cursor: pointer;
+}
