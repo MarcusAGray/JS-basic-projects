@@ -66,7 +66,9 @@ h1 {
   text-align: center;
   margin: 80px 0;
   color: var(--clr-gold);
-  font-family: var(--ff-secondary);
+
+  /* Not working */
+  /* text-transform: capitalize; */ 
 }
 
 main {
@@ -120,6 +122,7 @@ main {
 
 .dropDownBtn:hover {
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 
