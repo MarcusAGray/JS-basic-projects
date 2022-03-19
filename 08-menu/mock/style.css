@@ -15,6 +15,7 @@ body * {
 .container {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 header {
@@ -61,7 +62,7 @@ h1 {
   background-color: var(--dark-gold);
 }
 
-main {
+#menu-display {
   margin: 0 auto;
 }
 
@@ -72,13 +73,13 @@ main {
 }
 
 img {
-  width: 400px;
-  height: 200px;
+  width: 100%;
   margin-bottom: 10px;
   border: 5px var(--dark-gold) solid;
   border-radius: var(--border-radius);
-  object-fit:cover;
+  object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 .item-heading {
@@ -99,32 +100,37 @@ img {
 }
 
 @media only screen and (min-width: 800px) {
+
   .menu-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    gap: 2rem;
     width: 700px;
   }
 
   img {
-    width: 300px;
-    margin-right: 20px;
+    height: 175px;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  main {
-    width: 100%;
+@media screen and (min-width: 1200px) {
 
+  .container {
+    width: 95%;
   }
-  
+
+  #menu-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
   .menu-item {
-    display: inline-block;
-    /* display: flex; */
-    width: 400px;
-    margin: 20px;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   img {
-    width: 300px;
-    /* margin-right: 20px; */
-  }
+    height: 150px;
+  } 
 }
